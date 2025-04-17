@@ -200,21 +200,88 @@ body {
 .hover-underline:hover::before {
   transform: scaleX(1);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-  }
-
-  .div2 {
-    display: flex;
-    flex-direction: column;
     text-align: center;
   }
 
   .div2 {
-    margin: 10px 0;
-    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .div2 a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .bgimg {
+    padding: 80px 15px;
+  }
+
+  .img p {
+    font-size: 2rem;
+  }
+
+  .containers {
+    flex-direction: column;
+  }
+
+  .d1 {
+    flex-direction: column;
+  }
+
+  .heading h1 {
+    font-size: 1.7rem;
+  }
+
+  .navigationa a,
+  .navigationa button {
+    font-size: 0.9rem;
+    margin: 5px;
+    display: block; /* Stack links and button on smaller screens */
+  }
+}
+
+/* Tablet Devices (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .div1 img {
+    max-width: 120px;
+  }
+
+  .div2 a {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  .bgimg {
+    padding: 120px 30px;
+  }
+
+  .img p {
+    font-size: 2.2rem;
+  }
+
+  .containers {
+    gap: 20px;
+  }
+
+  .d1 {
+    margin-bottom: 40px;
+  }
+
+  .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .navigationa a,
+  .navigationa button {
+    font-size: 1rem;
+    margin: 0 15px;
   }
 }
